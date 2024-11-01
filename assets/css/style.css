@@ -1,0 +1,163 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;
+
+  font-family: "Poppins";
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+
+  color: #ffffff;
+}
+
+li {
+  list-style: none;
+}
+
+hr {
+  height: 1px;
+
+  border: 0;
+  background-color: #26292d;
+}
+
+h1 {
+  font-size: 3.75rem;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  min-width: 160px;
+  min-height: 50px;
+  padding: 0.5em 1em;
+
+  letter-spacing: 0.015rem;
+
+  border-radius: 5px;
+  background-color: #5c62ec;
+
+  font-size: 1.125rem;
+}
+
+.projects__container,
+.navbar__container,
+.content__container {
+  width: min(100% - 40px, 1300px);
+
+  margin-inline: auto;
+}
+
+.header {
+  height: 100vh;
+
+  background-color: #171718;
+}
+
+.content {
+  height: 100%;
+}
+.content__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  height: 100%;
+}
+.content__text {
+  text-align: center;
+}
+.content__text--primary {
+  color: #5c62ec;
+}
+.content__text--custom {
+  font-size: 2.5rem;
+}
+.content__title {
+  color: #ffffff;
+}
+.content__descr {
+  margin-top: 20px;
+
+  color: #ffffff;
+
+  font-size: 1.125rem;
+}
+.content__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  margin-top: 40px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  height: 65px;
+}
+.navbar__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.navbar-logo__link {
+  font-size: 1.5rem;
+}
+.navbar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  gap: 40px;
+}
+.navbar__link:hover {
+  border-bottom: 3px solid #5c62ec;
+}
+
+.projects__title {
+  color: #5c62ec;
+
+  font-size: 3.75rem;
+}

@@ -1,0 +1,36 @@
+@use "mixins" as *;
+@use "presets" as *;
+
+.content{
+    height: 100%;
+    &__container{
+        height: 100%;
+        @extend %container;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__text{
+        text-align: center;
+        &--primary{
+            color: $color-primary;
+        }
+        &--custom{
+            font-size: 2.5rem;
+        }
+    }
+    &__title{
+        color: $default-color;
+    }
+    &__descr{
+        margin-top: 20px;
+        font-size: 1.125rem;
+        color: $default-color;
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+}

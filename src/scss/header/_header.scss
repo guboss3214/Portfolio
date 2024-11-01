@@ -1,0 +1,7 @@
+@use "presets" as *;
+@use "mixins" as *;
+
+.header{
+    height: 100vh;
+    background-color: $header-bg-color;
+}

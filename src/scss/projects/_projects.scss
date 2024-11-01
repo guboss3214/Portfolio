@@ -1,0 +1,12 @@
+@use "presets" as *;
+@use "mixins" as *;
+
+.projects{
+    &__container{
+        @extend %container;
+    }
+    &__title{
+        color: $color-primary;
+        font-size: 3.75rem;
+    }
+}

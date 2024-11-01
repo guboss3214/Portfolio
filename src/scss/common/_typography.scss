@@ -1,0 +1,35 @@
+@use "presets" as *;    
+
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-y: scroll;
+    font-family: $font-family-base;
+    font-size: $font-size;
+}
+
+
+a{
+    color: $default-color;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background-color: #26292D;
+}
+
+h1{
+    font-size: 3.75rem;
+}
