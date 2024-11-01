@@ -2,11 +2,25 @@
 @use "mixins" as *;
 
 .projects{
+
     &__container{
-        @extend %container;
+        padding: 70px 0 70px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
     &__title{
         color: $color-primary;
         font-size: 3.75rem;
+    }
+    &__list{
+        width: 75%;
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: calc($gap * 1.5);
     }
 }

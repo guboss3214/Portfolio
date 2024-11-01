@@ -35,6 +35,12 @@ h1 {
   font-size: 3.75rem;
 }
 
+img {
+  width: 300px;
+
+  border-radius: 10px;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,7 +64,6 @@ h1 {
   font-size: 1.125rem;
 }
 
-.projects__container,
 .navbar__container,
 .content__container {
   width: min(100% - 40px, 1300px);
@@ -156,8 +161,66 @@ h1 {
   border-bottom: 3px solid #5c62ec;
 }
 
+.projects__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  padding: 70px 0 70px 0;
+}
 .projects__title {
   color: #5c62ec;
 
   font-size: 3.75rem;
+}
+.projects__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  width: 75%;
+  margin-top: 60px;
+
+  gap: 30px;
+}
+
+.project {
+  overflow: hidden;
+
+  -webkit-transition: scale 0.2s ease-in-out;
+          transition: scale 0.2s ease-in-out;
+
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.project:hover {
+  scale: 1.05;
+}
+.project__descr {
+  padding: 0 0 10px 25px;
+}
+.project__title {
+  font-size: 1.5rem;
+}
+.project__link {
+  color: black;
 }
