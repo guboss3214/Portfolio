@@ -9,7 +9,7 @@
 }
 
 html{
-    overflow-y: scroll;
+    scroll-behavior: smooth;
     font-family: $font-family-base;
     font-size: $font-size;
 }
@@ -32,9 +32,11 @@ hr{
 
 h1{
     font-size: 3.75rem;
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+    }
+    @media (max-width: 476px) {
+        font-size: 2rem;
+    }
 }
 
-img{
-    width: 300px;
-    border-radius: 10px;
-}

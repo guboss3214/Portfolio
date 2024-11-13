@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Portfolio</title>
 </head>
@@ -17,10 +18,20 @@
                     <a href="#" class="navbar-logo__link">Portfolio</a>
                 </div>
                 <ul class="navbar__list">
-                    <li class="navbar__item"><a href="index.html" class="navbar__link">Projects</a></li>
-                    <li class="navbar__item"><a href="index.html" class="navbar__link">Skills</a></li>
-                    <li class="navbar__item"><a href="index.html" class="navbar__link">Contacts</a></li>    
+                    <li class="navbar__item"><a href="#projects" class="navbar__link">Projects</a></li>
+                    <li class="navbar__item"><a href="#skills" class="navbar__link">Skills</a></li>
+                    <li class="navbar__item"><a href="mailto:uporskalo@gmail.com" class="navbar__link">Send mail</a></li>    
                 </ul>
+                <div class="navbar__burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="navbar__menu">
+                    <li class="navbar__item"><a href="#projects" class="navbar__link">Projects</a></li>
+                    <li class="navbar__item"><a href="#skills" class="navbar__link">Skills</a></li>
+                    <li class="navbar__item"><a href="mailto:uporskalo@gmail.com" class="navbar__link">Send mail</a></li>
+                </div>
             </div>
         </nav>
         <hr>
@@ -37,7 +48,7 @@
         </section>
     </header>
     <main>
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="projects__container">
                 <h2 class="projects__title">Projects</h2>
                 <div class="projects__list">
@@ -47,63 +58,69 @@
                                 <img src="assets/images/html+scss.png" class="project__img" alt="site">
                             </div>
                             <div class="project__descr">
-                                <h3 class="project__title">HTML + SCSS</h3>
+                                <h3 class="project__title">Site</h3>
                             </div>
                         </a>
                     </div>
                     <div class="project">
-                        <a href="https://guboss3214.github.io/Final-project-Html-Scss-/" class="project__link" target="_blank">
+                        <a href="https://github.com/guboss3214/Slider-OOP" class="project__link" target="_blank">
                             <div class="project-img">
-                                <img src="assets/images/html+scss.png" class="project__img" alt="site">
+                                <img src="assets/images/slider.png" class="project__img" alt="site">
                             </div>
                             <div class="project__descr">
-                                <h3 class="project__title">HTML + SCSS</h3>
+                                <h3 class="project__title">Slider</h3>
                             </div>
                         </a>
                     </div>
                     <div class="project">
-                        <a href="https://guboss3214.github.io/Final-project-Html-Scss-/" class="project__link" target="_blank">
+                        <a href="https://guboss3214.github.io/ToDo/" class="project__link" target="_blank">
                             <div class="project-img">
-                                <img src="assets/images/html+scss.png" class="project__img" alt="site">
+                                <img src="assets/images/todo.png" class="project__img" alt="site">
                             </div>
                             <div class="project__descr">
-                                <h3 class="project__title">HTML + SCSS</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="project">
-                        <a href="https://guboss3214.github.io/Final-project-Html-Scss-/" class="project__link" target="_blank">
-                            <div class="project-img">
-                                <img src="assets/images/html+scss.png" class="project__img" alt="site">
-                            </div>
-                            <div class="project__descr">
-                                <h3 class="project__title">HTML + SCSS</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="project">
-                        <a href="https://guboss3214.github.io/Final-project-Html-Scss-/" class="project__link" target="_blank">
-                            <div class="project-img">
-                                <img src="assets/images/html+scss.png" class="project__img" alt="site">
-                            </div>
-                            <div class="project__descr">
-                                <h3 class="project__title">HTML + SCSS</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="project">
-                        <a href="https://guboss3214.github.io/Final-project-Html-Scss-/" class="project__link" target="_blank">
-                            <div class="project-img">
-                                <img src="assets/images/html+scss.png" class="project__img" alt="site">
-                            </div>
-                            <div class="project__descr">
-                                <h3 class="project__title">HTML + SCSS</h3>
+                                <h3 class="project__title">ToDo</h3>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
+        <hr>
+        <section class="skills" id="skills">
+            <div class="skills__container">
+                <h2 class="skills__title">Skills</h2>
+                <ul class="skills__list">
+                    <li class="skills__item">HTML</li>
+                    <li class="skills__item">CSS</li>
+                    <li class="skills__item">JavaScript</li>
+                    <li class="skills__item">Scss</li>
+                    <li class="skills__item">Jasmine</li>
+                    <li class="skills__item">Git</li>
+                </ul>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__socials">
+                    <div class="footer__social">
+                        <a href="https://github.com/guboss3214" target="_blank"><i class="fa-brands fa-github footer__social-link"></i></a>
+                    </div>
+                    <div class="footer__social">
+                        <a href="https://www.linkedin.com/in/yurii-porskalo-b01b26264/"><i class="fa-brands fa-linkedin footer__social-link"></i></a>
+                    </div>
+                    <div class="footer__social">
+                        <a href="mailto:uporskalo@gmail.com"><i class="fa-regular fa-envelope footer__social-link"></i></a>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <p>&copy; 2024 Yurii Porskalo</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
