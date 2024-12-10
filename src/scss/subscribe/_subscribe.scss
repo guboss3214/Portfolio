@@ -1,0 +1,27 @@
+@use '../mixins/' as *;
+@use '../presets/' as *;
+
+.subscribe {
+    background-color: $color-primary;
+    padding: $gap-lg 0;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__form{
+        display: grid;
+        gap: $gap;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(3, 1fr);
+        @media (max-width: $xs) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-flow: row;
+        }
+        @media (max-width: $sm) {
+            grid-template-rows: repeat(3, 1fr);
+            grid-auto-flow: row;
+        }
+    }
+    
+}

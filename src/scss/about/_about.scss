@@ -1,0 +1,59 @@
+@use '../mixins' as *;
+@use '../presets' as *;
+
+.about{
+    background-color: $color-gray-light;
+
+    @extend %section;
+
+    &__container{
+        @extend %container;
+        display: grid;
+        grid-auto-flow: column;
+        @include lg-min {
+            gap: $gap-x5;
+            grid-template-columns: 1fr 271px;
+        }
+        @include lg-md {
+            gap: $gap-x3;
+            grid-template-columns: 1fr 255px;
+        }
+        @include md {
+            gap: $gap-x2;
+        }
+        @media (max-width: $sm) {
+            grid-auto-flow: row;
+        }
+    }
+    &__title{
+        color: $color-primary;
+        font-size: 2.5rem;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+    }
+    &__description{
+        position: relative;
+        & p{
+            font-size: 1.125rem;
+            @media (max-width: $xs) {
+                font-size: 1rem;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            top: 5px;
+
+            width: 2px;
+            height: 55%;
+            min-height: 200px;
+
+            content: "";
+
+            background-color: rgba($color-gray, 0.1);
+        }
+    }
+    &__picture{
+        text-align: center;
+    }
+}

@@ -1,0 +1,36 @@
+@use "../presets/" as *;
+@use "../mixins/" as *;
+
+.header-content{
+    position: relative;
+    z-index: 1;
+
+    &__container{
+        @extend %container;
+    }
+
+    &__title{
+        text-align: center;
+        margin: 0 0 53px 0;
+    }
+
+    &__buttons{
+        display: flex;
+        justify-content: center;
+        gap: $gap;
+        & .btn{
+            @media (max-width: $md){
+                font-size: 1em;
+                min-height: 50px;
+                min-width: 200px;
+            }
+            @media (max-width: $sm){
+                min-height: 40px;
+                min-width: 170px;
+            }
+        }
+        @media (max-width: 390px){
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+@use '../presets/' as *;
+@use '../mixins/' as *;
+
+.header-navbar {
+    &__list{
+        display: grid;
+        justify-content: end;
+        gap: $gap;
+        grid-template-columns: repeat(auto-fit,minmax($gap-x2,max-content));
+        @include unlist(0 (-$gap-sm) 0 0);
+        @media (max-width: $xs) {
+            display: none;
+            position: absolute;
+            text-align: center;
+            top: 100%;
+            right: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: $color-primary;
+        }
+    }
+
+    &__link{
+        display: block;
+        font-size: 1.125rem;
+        padding: $gap $gap-sm;
+        letter-spacing: 0.09em;
+        transition: color 0.3s;
+        &:hover,
+        &:focus{
+            color: $color-accent;
+        }
+        @media (max-width: $xs) {
+            position: relative;
+
+        }
+    }
+
+    &__btn{
+        display: none;
+        position: relative;
+        width: 40px;
+        height: 30px;
+        margin-left: auto;
+        @media (max-width: $xs){
+            display: block;
+        }
+        &-row {
+            position: absolute;
+            left: 0;
+            display: block;
+
+            width: 100%;
+            height: 4px;
+
+            transition: 0.25s ease-in-out;
+            transform: rotate(0deg);
+
+            opacity: 1;
+            border-radius: 4px;
+            background-color: $color-white;
+
+            &:nth-of-type(1) {
+                top: 0;
+            }
+
+            &:nth-of-type(2) {
+                top: 12px;
+            }
+
+            &:nth-of-type(3) {
+                top: 24px;
+            }
+        }
+
+        &--active span {
+            &:nth-of-type(1) {
+                top: 12px;
+
+                transform: rotate(135deg);
+            }
+
+            &:nth-of-type(2) {
+                left: -40px;
+
+                opacity: 0;
+            }
+
+            &:nth-of-type(3) {
+                top: 12px;
+
+                transform: rotate(-135deg);
+            }
+        }
+    }
+}
+
+.animate__flipInX{
+    @media (max-width: $xs) {
+        display: block;
+    }
+}
